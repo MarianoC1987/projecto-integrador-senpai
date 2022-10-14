@@ -1,58 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "DM sans";
-    text-decoration: none;
-
+  margin: 0;
+  padding: 0;
+  font-family: "DM sans";
+  text-decoration: none;
 }
 
 .encabezado {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto 20px auto;
-    width: 90%;
-
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+  width: 90%;
 }
 
-.logo img{
-    width: 150px;
+.logo img {
+  width: 150px;
 }
 
 .panel {
-    width: 50%;
+  width: 50%;
 }
 
-.panel a{
-    margin-right: 10%;
-    color: black;
-    font-weight: 500;
+.panel a {
+  margin-right: 10%;
+  color: black;
+  font-weight: 500;
 }
 
 button {
-    text-align: center;
-height: 30px;
-width: 110px;
-color: white;
-background-color: #5227cc;
-border-radius: 30px;
-border: 0;
+  text-align: center;
+  height: 30px;
+  width: 110px;
+  color: white;
+  background-color: #5227cc;
+  border-radius: 30px;
+  border: 0;
 }
 
 button:hover {
-    background-color: #7749f8;
-    cursor: pointer;
+  background-color: #7749f8;
+  cursor: pointer;
 }
 
 .mainEncabezado {
-    text-align: center;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/projecto-integrador-senpai/img/manos.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/projecto-integrador-senpai/img/manos.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* ESTILO MAIN NOTICIAS */
+
+.noticias {
+  height: 700px;
+  background-color: #5292ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noticias h2 {
+  font-size: 2.5em;
+}
+
+.noticias span a {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.cards-noticias {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 24%;
+  height: 100%;
+  font-size: 0.8em;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 5px;
+}
+
+.btn-noticias {
+  background-image: url(/projecto-integrador-senpai/img/pexels-yury-kim-585419.jpg);
+  background-position: fixed;
+  background-size: cover;
+  height: 40%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-noticias button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.iconos-noticias {
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-card {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* ESTILO FOOTER */
+
+footer {
+  height: 20vh;
+  background-color: #5227cc;
+  text-align: center;
+  padding-top: 1vh;
+  font-size: 16px;
+}
+
+.contenedorFooter {
+  height: 60%;
+  padding-top: 3vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  border-bottom: 1px solid #f7e1e1;
+  border-top: 1px solid #f7e1e1;
+}
+
+.contactFooter {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contactFooter img {
+  width: 10vw;
+  padding-right: 2vw;
+}
+.listaFooter {
+  text-align: start;
+  list-style: none;
+  padding-left: 2vw;
+}
+
+.listaFooter li a {
+  color: #ffffff;
+}
+
+.redesFooter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.redesFooter span {
+  color: #ffffff;
+}
+
+.redesFooter img {
+  width: 1.3vw;
+  margin: 10px 2px;
+}
+
+.cw {
+  color: #222222;
 }
