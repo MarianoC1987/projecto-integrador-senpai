@@ -170,8 +170,26 @@ button:hover {
 
 /* ESTILO DEL POP UP MODEL DE INGRESO*/
 
+.contenedor-modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(179, 179, 179, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.mostrar-modal {
+  z-index: 1;
+}
+
 .modal {
-  height: 50vh;
+  background-color: #ffffff;
+  height: 60vh;
   width: 60%;
   margin: auto;
   display: flex;
@@ -180,7 +198,8 @@ button:hover {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  border: 1px solid #808080bf;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
 }
 
 .modal-left {
@@ -245,7 +264,7 @@ button:hover {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px;
 }
 
 .modal-imagenes {
